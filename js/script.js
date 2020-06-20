@@ -10,9 +10,16 @@ while (!(vacationType === "musical" || vacationType === "tropical" || vacationTy
 //ask for how many are in travel group
 var groupSize = prompt("How many are in your group?");
 groupSize = Number(groupSize, 8);
+
 //if the group size entered is not a number, ask again until a number is entered
 while (isNaN(groupSize)) {
     groupSize = prompt("Please enter a valid numeric group size.");
+    groupSize = Number(groupSize, 8);
+}
+
+while (groupSize < 0) {
+    // if less than 0; negative;
+    groupSize= prompt("Quantity field must contain a positive number!");
     groupSize = Number(groupSize, 8);
 }
 
