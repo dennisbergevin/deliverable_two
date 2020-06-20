@@ -9,11 +9,11 @@ while (!(vacationType === "musical" || vacationType === "tropical" || vacationTy
 
 //ask for how many are in travel group
 var groupSize = prompt("How many are in your group?");
-groupSize = parseInt(groupSize, 8);
+groupSize = Number(groupSize, 8);
 //if the group size entered is not a number, ask again until a number is entered
 while (isNaN(groupSize)) {
     groupSize = prompt("Please enter a valid numeric group size.");
-    groupSize = parseInt(groupSize, 8);
+    groupSize = Number(groupSize, 8);
 }
 
 //determine the destination based on the vacation type
