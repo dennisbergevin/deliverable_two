@@ -1,3 +1,5 @@
+setTimeout(function () {
+
 //ask for the kind of vacation
 var vacationType = prompt("What kind of trip would you like to go on? (musical, tropical, or adventurous)");
 //if the answer provided is invalid, ask again until a valid option is provided
@@ -45,3 +47,4 @@ if (groupSize < 3) { //less than 3 people
 var result = ("Since you're a group of " + groupSize + " going on a " + vacationType + " vacation, you should take a " + travelSuggestion + " to " + destination + ".");
 alert(result);
 console.log(result);
+}, 200)
