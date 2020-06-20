@@ -17,7 +17,7 @@ while (isNaN(groupSize)) {
     groupSize = Number(groupSize, 8);
 }
 
-while (groupSize < 0) {
+while (groupSize <= 0) {
     // if less than 0; negative;
     groupSize= prompt("Quantity field must contain a positive number!");
     groupSize = Number(groupSize, 8);
