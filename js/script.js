@@ -54,4 +54,4 @@ if (groupSize < 3) { //less than 3 people
 var result = ("Since you're a group of " + groupSize + " going on a " + vacationType + " vacation, you should take a " + travelSuggestion + " to " + destination + ".");
 alert(result);
 console.log(result);
-}, 200)
+}, 400)
