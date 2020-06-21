@@ -9,18 +9,24 @@ while (!(vacationType === "musical" || vacationType === "tropical" || vacationTy
 
 //ask for how many are in travel group
 var groupSize = prompt("How many are in your group?");
-groupSize = Number.isInteger(groupSize, 8);
+groupSize = Number(groupSize, 99);
 
 //if the group size entered is not a number, ask again until a number is entered
 while (isNaN(groupSize)) {
     groupSize = prompt("Please enter a positive whole number group size.");
-    groupSize = Number.isInteger(groupSize, 8);
+    groupSize = Number(groupSize, 99);
 }
 
 while (groupSize <= 0) {
     // if less than 0; negative;
     groupSize= prompt("Quantity field must contain a positive whole number!");
-    groupSize = Number.isInteger(groupSize, 8);
+    groupSize = Number(groupSize, 99);
+}
+
+while (!Number.isInteger(groupSize)) {
+    // if not a whole number
+    groupSize= prompt("Quantity field must contain a positive whole number!");
+    groupSize = Number(groupSize, 99);
 }
 
 //determine the destination based on the vacation type
