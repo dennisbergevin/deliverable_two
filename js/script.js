@@ -18,7 +18,7 @@ while (isNaN(groupSize)) {
 }
 
 while (groupSize <= 0) {
-    // if less than 0; negative;
+    // if less than or equal to 0; negative;
     groupSize= prompt("Quantity field must contain a positive whole number!");
     groupSize = Number(groupSize, 99);
 }
